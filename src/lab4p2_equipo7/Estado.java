@@ -8,10 +8,6 @@ package lab4p2_equipo7;
  *
  * @author calol
  */
-public class Entrenador {
-    String nombre;
-    int edad;
-    double dinero;
-    
+public class Estado {
     
 }
