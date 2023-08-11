@@ -9,9 +9,11 @@ package lab4p2_equipo7;
  * @author calol
  */
 public class Pokemon {
-   String especie;
+   String especie,estadoactual;
    int nivel,experiencia_Acumulada,experiencia_subirnivel;
+   int puntosvida,puntosataque,puntosdefensa,puntosespeciales,velocidad;
    Movimiento[] movimientos = new Movimiento[4];
+   
 
     public Pokemon(String especie, int nivel, int experiencia_Acumulada, int experiencia_subirnivel) {
         this.especie = especie;

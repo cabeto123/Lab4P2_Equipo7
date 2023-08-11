@@ -8,6 +8,51 @@ package lab4p2_equipo7;
  *
  * @author calol
  */
-public class Fisico {
+public class Fisico extends Movimiento {
+    int puntosdepoder,puntosdeprecision;
+
+    public Fisico(int puntosdepoder, int puntosdeprecision, String nombre, String descripcion) {
+        super(nombre, descripcion);
+        this.puntosdepoder = puntosdepoder;
+        this.puntosdeprecision = puntosdeprecision;
+    }
+
+    public int getPuntosdepoder() {
+        return puntosdepoder;
+    }
+
+    public void setPuntosdepoder(int puntosdepoder) {
+        this.puntosdepoder = puntosdepoder;
+    }
+
+    public int getPuntosdeprecision() {
+        return puntosdeprecision;
+    }
+
+    public void setPuntosdeprecision(int puntosdeprecision) {
+        this.puntosdeprecision = puntosdeprecision;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +" puntosdepoder=" + puntosdepoder + "puntosdeprecision=" + puntosdeprecision ;
+    }
+    
     
 }
